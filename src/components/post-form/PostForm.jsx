@@ -116,7 +116,7 @@ export default function PostForm({ post }) {
                 {post?.featuredImage && (
                     <div className="w-full max-w-[250px] h-[200px] overflow-hidden rounded-lg shadow-md">
                         <img
-                            src={appwriteService.getFilePreview(post.featuredImage)}
+                            src={appwriteService.getFileView(post.featuredImage)}
                             alt={post.title}
                             className="w-full h-full object-cover rounded-lg"
                         />

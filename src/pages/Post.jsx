@@ -52,7 +52,7 @@ export default function Post() {
                     {/* Image Section */}
                     <div className="relative w-full flex justify-center mb-6 bg-gray-100 border rounded-lg">
                         <img
-                            src={appwriteService.getFilePreview(post.featuredImage)}
+                            src={appwriteService.getFileView(post.featuredImage)}
                             alt={post.title}
                             className="w-full max-h-[600px] object-contain rounded-lg"
                         />
@@ -93,7 +93,5 @@ export default function Post() {
         </div>
     ) : null;
 }
-
-
 
 

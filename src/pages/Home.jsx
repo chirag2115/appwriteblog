@@ -35,18 +35,20 @@ function Home() {
     );
   }
 
+
   if (posts.length === 0) {
     return (
       <div className="w-full py-16 flex flex-col items-center justify-center min-h-screen bg-gray-100">
         <Container>
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-700 mb-2">No Posts Yet! 📝</h2>
-            <p className="text-gray-500">Be the first to create an amazing post.</p>
+            <h2 className="text-3xl font-bold text-gray-700 mb-2">Login to View Posts 🔒</h2>
+            <p className="text-gray-500">You must be logged in to explore the content.</p>
           </div>
         </Container>
       </div>
     );
   }
+  
 
   return (
     <div className="w-full py-16 bg-gray-100 min-h-screen">
