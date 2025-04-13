@@ -34,7 +34,7 @@ function AllPosts() {
                     <div className="bg-gray-100 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         {posts.length > 0 ? (
                             posts.map((post) => (
-                                <div key={post.$id} className="bg-gray-100 overflow-hidden">
+                                <div key={post.$id} >
                                     <PostCard {...post} />
                                 </div>
                             ))
